@@ -1,0 +1,16 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Storm Scripts", "DarkTheme")
+
+-- Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Auto Farm scripts psx")
+
+
+MainSection:NewButton("Project WD (key)", "Project Wd script for psx", function()
+    getgenv().InviteCode = "TxMNjNdMZ9"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Discord-Auto-Join.lua"))()
+    getgenv().key = "projectWBIsAwesomemrcrapcrappypattt"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
+end)
+
+

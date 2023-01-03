@@ -16,6 +16,19 @@ CreditsSection:NewLabel("Tester : ❄RedDemon❄#8384")
 
 
 
+-- Updates
+
+local Updates = Window:NewTab("Updates")
+local UpdatesSection = Updates:NewSection("Updates Version 1.0.0V")
+
+UpdatesSection:NewLabel("+Added Anti Afk")
+UpdatesSection:NewLabel("+Added Chat Spoof")
+UpdatesSection:NewLabel("+Added Walk And Jump Modify")
+
+
+
+
+
 -- Essential
 
 local Essential = Window:NewTab("Essential")
@@ -39,6 +52,12 @@ end)
 EssentialSection:NewButton("Reset WL/JP", "Reset to all defaults", function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+EssentialSection:NewLabel("For Fun")
+
+EssentialSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
 end)
 
 

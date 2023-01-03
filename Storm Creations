@@ -24,6 +24,7 @@ local UpdatesSection = Updates:NewSection("Updates Version 1.0.0V")
 UpdatesSection:NewLabel("+Added Anti Afk")
 UpdatesSection:NewLabel("+Added Chat Spoof")
 UpdatesSection:NewLabel("+Added Walk And Jump Modify")
+UpdatesSection:NewLabel("Key Toggle")
 
 
 
@@ -38,6 +39,10 @@ local EssentialSection = Essential:NewSection("Caracter")
 
 EssentialSection:NewButton("Anti Afk Script", "Anti Afk", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GrinLOLZ/Anti-Afk-script-Pokemon-brick-bronze-egg-afk/main/Anti%20afk", true ))()
+end)
+
+EssentialSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
 end)
 
 
@@ -73,6 +78,7 @@ PSXSection:NewButton("Project WD (need key)", "Project Wd script for psx", funct
     getgenv().key = "projectWBIsAwesomemrcrapcrappypattt"
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
 end)
+
 
 
 

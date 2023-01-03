@@ -1,14 +1,40 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+getgenv().InviteCode = "avmJTQ2Z2Y"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Discord-Auto-Join.lua"))()
 local Window = Library.CreateLib("Storm Scripts", "DarkTheme")
 
--- Main
-local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Auto Farm scripts psx")
+
+-- Credits
+
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+
+CreditsSection:NewLabel("Discord : Storm Scripts")
+CreditsSection:NewLabel("Developer : Black Storm#2573")
+CreditsSection:NewLabel("Tester : Vladut#6969")
+CreditsSection:NewLabel("Tester : ❄RedDemon❄#8384")
 
 
-MainSection:NewButton("Project WD (key)", "Project Wd script for psx", function()
-    getgenv().InviteCode = "TxMNjNdMZ9"
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Discord-Auto-Join.lua"))()
+
+-- Essestial
+
+local Essestial = Window:NewTab("Essestial")
+local EssestialSection = Essestial:NewSection("Caracter")
+
+
+
+
+
+
+
+
+
+-- PSX
+local PSX = Window:NewTab("PSX")
+local PSXSection = PSX:NewSection("Auto Farm scripts psx")
+
+
+PSXSection:NewButton("Project WD (need key)", "Project Wd script for psx", function()
     getgenv().key = "projectWBIsAwesomemrcrapcrappypattt"
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
 end)

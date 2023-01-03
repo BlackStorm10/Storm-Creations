@@ -16,14 +16,30 @@ CreditsSection:NewLabel("Tester : ❄RedDemon❄#8384")
 
 
 
--- Essestial
+-- Essential
 
-local Essestial = Window:NewTab("Essestial")
-local EssestialSection = Essestial:NewSection("Caracter")
-
-
+local Essential = Window:NewTab("Essential")
+local EssentialSection = Essential:NewSection("Caracter")
 
 
+
+EssentialSection:NewButton("Anti Afk Script", "Anti Afk", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GrinLOLZ/Anti-Afk-script-Pokemon-brick-bronze-egg-afk/main/Anti%20afk", true ))()
+end)
+
+
+EssentialSection:NewSlider("Walk Speed", "Speed !!", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+EssentialSection:NewSlider("JumpPower", "JUMP JUMP!", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+EssentialSection:NewButton("Reset WL/JP", "Reset to all defaults", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
 
 
 

@@ -11,7 +11,7 @@ local CreditsSection = Credits:NewSection("Credits")
 
 CreditsSection:NewLabel("Discord : Storm Scripts")
 CreditsSection:NewLabel("Developer : Black Storm#2573")
-CreditsSection:NewLabel("Co-Developer : razvyx#0001")
+CreditsSection:NewLabel("Co-Developer : razvyx#0001") 
 CreditsSection:NewLabel("Tester : Vladut#6969")
 CreditsSection:NewLabel("Tester : ❄RedDemon❄#8384")
 

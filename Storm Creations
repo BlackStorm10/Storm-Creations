@@ -11,7 +11,7 @@ local CreditsSection = Credits:NewSection("Credits")
 
 CreditsSection:NewLabel("Discord : Storm Scripts")
 CreditsSection:NewLabel("Developer : Black Storm#2573")
-CreditsSection:NewLabel("Co-Developer : razvyx#0001") 
+CreditsSection:NewLabel("Co-Developer : razvyx#0001")
 CreditsSection:NewLabel("Tester : Vladut#6969")
 CreditsSection:NewLabel("Tester : ❄RedDemon❄#8384")
 
@@ -20,13 +20,10 @@ CreditsSection:NewLabel("Tester : ❄RedDemon❄#8384")
 -- Updates
 
 local Updates = Window:NewTab("Updates")
-local UpdatesSection = Updates:NewSection("Updates Version 1.0.0V")
+local UpdatesSection = Updates:NewSection("Updates Version 1.0.1V")
 
-UpdatesSection:NewLabel("+Added Anti Afk")
-UpdatesSection:NewLabel("+Added Chat Spoof")
-UpdatesSection:NewLabel("+Added Walk And Jump Modify")
-UpdatesSection:NewLabel("Key Toggle")
-
+UpdatesSection:NewLabel("Bee Swarm Simulator Scripts !")
+UpdatesSection:NewLabel("2 New Scripts For Bee Simulator")
 
 
 
@@ -47,11 +44,13 @@ EssentialSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, functi
 end)
 
 
-EssentialSection:NewSlider("Walk Speed", "Speed !!", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+
+EssentialSection:NewSlider("Walk Speed", "Speed !!", 500, 16, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-EssentialSection:NewSlider("JumpPower", "JUMP JUMP!", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+EssentialSection:NewSlider("JumpPower", "JUMP JUMP!", 350, 50, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
@@ -84,6 +83,15 @@ PSXSection:NewButton("Milk Up (no key)", "Project Wd script for psx", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Flxry/Main/MilkyHub/Pet%20Simulator%20X"))()
 end)
 
+-- BeeSwarm
 
+local Bee_Swarm = Window:NewTab("Bee Swarm Simulator")
+local Bee_SwarmSection = Bee_Swarm:NewSection("Auto Farm Scripts For Bee Swarm")
 
+Bee_SwarmSection:NewButton("CloudHub (password : CloudyKey )", "Cloud Hub Script For Bee Swarm Simulator", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripters/CloudHub/main/hub"))()
+end)
 
+Bee_SwarmSection:NewButton("DarkCyber (no key)", "Script For Bee simulator", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/29"))()
+end)
